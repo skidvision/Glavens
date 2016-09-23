@@ -1,0 +1,110 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3433,        102]
+NotebookOptionsPosition[      3000,         81]
+NotebookOutlinePosition[      3355,         97]
+CellTagsIndexPosition[      3312,         94]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"names", "=", 
+  RowBox[{"FileNames", "[", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", "\"\</*.obj\>\""}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.683634041732583*^9, 3.6836340632400312`*^9}, {
+  3.683634559266309*^9, 3.6836345675253773`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven1.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven2.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven3.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven4.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven5.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven6.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven7.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven8.obj\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.683634058943738*^9, 3.683634108690793*^9, 
+  3.6836345681224957`*^9, 3.683646721972785*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"StringReplace", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"\"\<.obj\>\"", "\[Rule]", "\"\<.stl\>\""}]}], "]"}], ",", 
+     RowBox[{"RepairMesh", "[", 
+      RowBox[{"Import", "[", "#", "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<STL\>\"", ",", 
+       RowBox[{"\"\<BinaryFormat\>\"", "\[Rule]", "False"}], ",", 
+       RowBox[{"\"\<InvertNormals\>\"", "\[Rule]", "True"}]}], "}"}]}], "]"}],
+    "&"}], "/@", "names"}]], "Input",
+ CellChangeTimes->{{3.683634074100053*^9, 3.683634186247319*^9}, {
+  3.683634246379877*^9, 3.6836342579413023`*^9}, {3.683634372607071*^9, 
+  3.683634408429289*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven1.stl\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven2.stl\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven3.stl\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven4.stl\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven5.stl\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven6.stl\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven7.stl\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Glaven Set 1/BigGlaven8.stl\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.683634513068913*^9, 3.683646738387969*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 751},
+WindowMargins->{{137, Automatic}, {Automatic, 11}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 291, 7, 32, "Input"],
+Cell[874, 31, 709, 12, 180, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1620, 48, 701, 17, 54, "Input"],
+Cell[2324, 67, 660, 11, 214, "Output"]
+}, Open  ]]
+}
+]
+*)
+
